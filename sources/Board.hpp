@@ -1,6 +1,6 @@
 #pragma once
 #include <stdio.h>
-#include <map>
+#include <unordered_map>
 #include <vector>
 #include <string>
 #include <array>
@@ -31,20 +31,18 @@ namespace pandemic{
             bool is_cuerd(Color color);
             void set_cure(Color color);
             
-            int get_cubes(City city){
-                return cubes[city];
-            }
+           
         
 
         private:
-            std::map<City,int>cubes;
-            std::map<City,std::vector<City>> connections;
-            std::map<City,Color>cityes_color_map;
+            std::unordered_map<City,int>cubes;
+            std::unordered_map<City,std::vector<City>> connections;
+            std::unordered_map<City,Color>cityes_color_map;
             
             // defult is false
-            map<City,bool>research_station;
+            unordered_map<City,bool>research_station;
            
-            map<Color,bool>cure={ { Color::Blue,false}, { Color::Black ,false}, {Color::Red ,false}, {Color::Yellow,false }    };
+            unordered_map<Color,bool>cure={ { Color::Blue,false}, { Color::Black ,false}, {Color::Red ,false}, {Color::Yellow,false }    };
 
 
         

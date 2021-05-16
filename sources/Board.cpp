@@ -101,6 +101,7 @@ namespace pandemic{
     void Board::set_research(City c){
         research_station[c]=true;
     }
+    
     Color Board::get_city_color(const City city){ 
          return this->cityes_color_map[city];
     }

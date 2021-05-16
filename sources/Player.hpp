@@ -3,10 +3,8 @@
 #include "Color.hpp"
 #include "City.hpp"
 #include "Board.hpp"
-#include <vector>
 #include <iostream>
-#include <map>
-#include <array>
+
 #include <bits/stdc++.h>
 #define FIVE 5
 

@@ -130,7 +130,8 @@ namespace pandemic{
                     board[c]=0;
                 }
                 else{
-                board[c]=board[c]-1;}
+                board[c]=board[c]-1;
+                }
            
         }else{
             throw("you cant use treat outside the wanted city");
